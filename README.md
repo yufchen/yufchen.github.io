@@ -9,7 +9,6 @@ This repository keeps the source for [yufchen.github.io](https://yufchen.github.
 - Research: `_pages/research.md`
 - Publications: `_pages/publications.md`
 - Teaching: `_pages/teaching.md`
-- CV landing page: `_pages/cv.md`
 - CV source: `files/cv/resume.tex`
 
 ## Typical workflow
