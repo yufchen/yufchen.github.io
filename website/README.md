@@ -1,0 +1,39 @@
+# Yufeng Chen — personal website
+
+This directory contains the Jekyll source for [yufchen.github.io](https://yufchen.github.io/).
+
+## What to edit
+
+- Website profile and links: `_config.yml`
+- Homepage: `_pages/about.md`
+- Research: `_pages/research.md`
+- Publications: `_pages/publications.md`
+- Teaching: `_pages/teaching.md`
+- Published CV copy: `files/cv/yfchen_cv.pdf`
+
+## Typical workflow
+
+```powershell
+git pull
+git switch -c update/site
+# edit the website
+git status
+git add website
+git commit -m "Update personal website"
+git push -u origin update/site
+```
+
+Merge the branch into `master` when the update is ready. GitHub Actions builds this directory and deploys it to GitHub Pages.
+
+The deployed PDF uses the stable website path `files/cv/yfchen_cv.pdf`. Replace that file when publishing an updated CV.
+
+## Preview the website locally
+
+With Ruby and Bundler installed, run from this directory:
+
+```powershell
+bundle install
+bundle exec jekyll serve --config _config.yml,_config.dev.yml
+```
+
+Then open `http://localhost:4000`.

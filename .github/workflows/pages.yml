@@ -21,22 +21,13 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Compile CV from LaTeX
-        uses: xu-cheng/latex-action@v4
-        with:
-          root_file: resume.tex
-          working_directory: files/cv
-
-      - name: Publish compiled CV at the stable URL
-        run: cp files/cv/resume.pdf files/cv/yfchen_cv.pdf
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Build Jekyll site
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./website
           destination: ./_site
 
       - name: Upload Pages artifact
