@@ -9,7 +9,8 @@ This directory contains the Jekyll source for [yufchen.github.io](https://yufche
 - Research: `_pages/research.md`
 - Publications: `_pages/publications.md`
 - Teaching: `_pages/teaching.md`
-- Published CV copy: `files/cv/yfchen_cv.pdf`
+- Published English CV: `files/cv/yufeng-chen-resume-en.pdf`
+- Published Chinese CV: `files/cv/yufeng-chen-resume-cn.pdf`
 
 ## Typical workflow
 
@@ -25,7 +26,7 @@ git push -u origin update/site
 
 Merge the branch into `master` when the update is ready. GitHub Actions builds this directory and deploys it to GitHub Pages.
 
-The deployed PDF uses the stable website path `files/cv/yfchen_cv.pdf`. Replace that file when publishing an updated CV.
+The deployed PDFs use stable paths under `files/cv/`. Replace the corresponding English or Chinese PDF when publishing an update.
 
 ## Preview the website locally
 

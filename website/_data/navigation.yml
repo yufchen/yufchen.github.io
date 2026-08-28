@@ -13,5 +13,8 @@ main:
     url: /teaching/
 
   - title: "CV"
-    url: /files/cv/yfchen_cv.pdf
+    url: /files/cv/yufeng-chen-resume-en.pdf
+
+  - title: "中文 CV"
+    url: /files/cv/yufeng-chen-resume-cn.pdf
 
