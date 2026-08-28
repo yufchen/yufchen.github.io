@@ -1,8 +1,17 @@
-# main links links
-main:       
-  - title: "Projects"
-    url: /projects/
-    
-  - title: "CV&PS"
+# Main navigation
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Research"
+    url: /research/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "CV"
     url: /cv/
 

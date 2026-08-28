@@ -1,0 +1,154 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[sfdefault]{roboto}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\titlerule]
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{\item\normalsize{#1}}
+\newcommand{\resumeProjectHeading}[3]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\normalsize #1} & \normalsize #2 \\
+    \textit{\normalsize #3} & \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0in,label={},itemsep=4pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemList}{\begin{itemize}[leftmargin=0.28in,itemsep=2pt,topsep=3pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+
+\begin{center}
+  \textbf{\LARGE Yufeng Chen} \\
+  \vspace{5pt}
+  \normalsize
+  (+1) 765-775-9220 $|$
+  \href{mailto:chen4044@purdue.edu}{chen4044@purdue.edu} $|$
+  \href{https://yufchen.github.io/}{yufchen.github.io} $|$
+  \href{https://github.com/yufchen}{github.com/yufchen}
+\end{center}
+
+\vspace{-4pt}
+
+\section*{Education}
+\resumeSubHeadingList
+  \item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Ph.D. Candidate, Computer Science} & Sep. 2021 -- Present \\
+    Purdue University, West Lafayette, Indiana & \\
+  \end{tabular*}
+
+  \item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{Bachelor of Engineering, Electronic Information Engineering} & Sep. 2017 -- Jul. 2021 \\
+    University of Science and Technology of China, Hefei, China & GPA: 3.87/4.3 \\
+    Talent Program in Information Science and Technology & \\
+  \end{tabular*}
+\resumeSubHeadingListEnd
+
+\section*{Research \& Engineering Projects}
+\resumeSubHeadingList
+  \resumeProjectHeading
+    {Efficient Streaming of Immersive Content over Wi-Fi Networks}
+    {2022 -- Present}
+    {Ph.D. Thesis Research, Purdue University}
+    \resumeItemList
+      \resumeItem{Developed cross-layer scheduling frameworks for networked VR that coordinate application utility and transport behavior to improve perceptual quality under bandwidth and loss constraints.}
+      \resumeItem{Designed packet-level progressive streaming for static 3D/VR assets and evaluated QUIC/SCTP policies, including stream prioritization and out-of-order delivery, to reduce application-level blocking.}
+      \resumeItem{Developed adaptive policies that balance new data, retransmissions, and random linear network coding redundancy for fair, robust multi-user VR over lossy Wi-Fi.}
+      \resumeItem{Explored joint scheduling of static assets and delay-sensitive real-time updates, including synchronization, consistency, and interaction traffic.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {QoE-based Routing Path Selection}
+    {2022 -- 2023}
+    {Purdue University and Juniper Networks}
+    \resumeItemList
+      \resumeItem{Investigated routing path selection driven by application-level quality of experience rather than only traditional network-layer metrics.}
+      \resumeItem{Contributed to the design and evaluation of QoE-aware path-selection strategies for networked applications.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Scheduling Diverse QUIC Streams}
+    {2022}
+    {Purdue University}
+    \resumeItemList
+      \resumeItem{Extended \texttt{quiche} to study sender-side scheduling across reliable QUIC streams and unreliable datagrams for applications with mixed reliability and latency requirements.}
+      \resumeItem{Implemented static, dynamic-priority, and weighted round-robin schedulers; evaluated CPU, memory, and queueing-delay tradeoffs.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Multi-Domain Optical Network Testbed Based on DeepRMSA}
+    {Jun. 2020 -- Nov. 2020}
+    {University of California, Davis}
+    \resumeItemList
+      \resumeItem{Developed a deep-reinforcement-learning system for routing, modulation, and spectrum assignment in hierarchical multi-domain elastic optical networks.}
+      \resumeItem{Integrated DRL agents with the ONOS SDN controller and achieved lower connection-blocking probability than k-shortest-path routing in multi-domain evaluations.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {RDMA Optimization for MongoDB}
+    {Jun. 2018 -- Nov. 2018}
+    {University of Science and Technology of China}
+    \resumeItemList
+      \resumeItem{Replaced TCP/IP-based MongoDB cluster data transfer with RDMA to reduce client--server and inter-server communication latency.}
+      \resumeItem{Achieved up to 3.58$\times$/6.16$\times$ peak Put/Get throughput improvement over the TCP/IP baseline.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section*{Publications}
+\begin{itemize}[leftmargin=0.22in,itemsep=4pt,label={\small$\bullet$}]
+  \resumeItem{Yuqi Zhou, Shuqi Liao, \textbf{Yufeng Chen}, Sonia Fahmy, and Voicu Popescu. ``Scalable Collocated Multi-User VR Through Virtual Environment User Spatial Coherence.'' \textit{IEEE Transactions on Visualization and Computer Graphics}, 2026. Also in Proc. IEEE VR, Mar. 2026.}
+  \resumeItem{\textbf{Yufeng Chen}, Umakant Kulkarni, Voicu Popescu, and Sonia Fahmy. ``RUN: A Case for Cross-Layer Networked Virtual Reality.'' \textit{Proceedings of the 33rd ACM International Conference on Multimedia}, MM '25, pp. 12111--12120, Oct. 2025.}
+  \resumeItem{Umakant Kulkarni, \textbf{Yufeng Chen}, Patrick Melampy, and Sonia Fahmy. ``Toward QoE-based Routing Path Selection.'' \textit{IEEE HPSR}, pp. 114--119, Jun. 2023.}
+  \resumeItem{\textbf{Yufeng Chen}, Akhil Prasad, Sonia Fahmy, and Voicu Popescu. ``Scheduling Diverse QUIC Streams.'' Poster, USENIX NSDI, Apr. 2023.}
+\end{itemize}
+
+\section*{Teaching Experience}
+\begin{itemize}[leftmargin=0.22in,itemsep=4pt,label={\small$\bullet$}]
+  \item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    Teaching Assistant, CS 536: Data Communication and Computer Networks & 2024, 2025 \\
+  \end{tabular*}
+  \item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    Teaching Assistant, CS 240: Programming in C & Spring 2022 \\
+  \end{tabular*}
+  \item
+  \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+    Teaching Assistant, CS 251: Data Structures & Fall 2021 \\
+  \end{tabular*}
+\end{itemize}
+
+\section*{Technical Skills}
+\resumeSubHeadingList
+  \resumeItem{\textbf{Programming}: Python, C/C++, Java, Shell}
+  \resumeItem{\textbf{Networking \& Systems}: QUIC, TCP/IP, Wi-Fi, multicast/broadcast, socket programming, Linux, RDMA}
+  \resumeItem{\textbf{VR \& Graphics}: Unity, point clouds, 3D Gaussian Splatting}
+  \resumeItem{\textbf{Tools}: Git, Docker, Wireshark, ns-3, MATLAB}
+\resumeSubHeadingListEnd
+
+\end{document}
