@@ -10,7 +10,7 @@ This directory contains the Jekyll source for [yufchen.github.io](https://yufche
 - Publications: `_pages/publications.md`
 - Teaching: `_pages/teaching.md`
 - Published English CV: `files/cv/yufeng-chen-resume-en.pdf`
-- Published Chinese CV: `files/cv/yufeng-chen-resume-cn.pdf`
+- Published Chinese CV (with photo): `files/cv/yufeng-chen-resume-zh-photo.pdf`
 
 ## Typical workflow
 
